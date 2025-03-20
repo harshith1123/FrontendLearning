@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .loader{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200px;
+        }
+        .ball{
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            margin: 0px 10px;
+            animation: bounce 2s ease 0s infinite normal;
+        }
+        .blue{background-color: #4285f5;}
+        .red{
+            background-color: #ea4436;
+            animation-delay: 0.25s;
+         }
+        .yellow{
+            background-color: #fbbd06;
+            animation-delay: 0.5s;
+        }
+        .green{
+            background-color: #34a952;
+            animation-delay: 0.75s;
+        }
+
+        @keyframes bounce{
+            50%{
+                transform: translateY(25px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="loader">
+        <div class="ball blue"></div>
+        <div class="ball red"></div>
+        <div class="ball yellow"></div>
+        <div class="ball green"></div>
+    </div>
+</body>
+</html>

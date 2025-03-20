@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 200px;
+            width: 200px;
+            border: 1px solid green;
+            margin: 20px;
+            padding: 20px;
+        }
+        .b1{
+            direction: ltr; /* left to right */
+        }
+        .b2{
+            direction: rtl; /* right to left */
+        }
+        .b3{
+            direction: rtl;
+            unicode-bidi: bidi-override;
+        }
+        .b4{
+            direction: rtl;
+            unicode-bidi: isolate-override; 
+        }
+        .b5{
+            direction: rtl;
+            unicode-bidi: isolate; 
+        }
+    </style>
+</head>
+<body>
+    <h1>direction</h1>
+
+    <div class="b1">block 1 content</div>
+    <div class="b2">block 2 content</div>
+    <div class="b3">block 3 content</div>
+    <div class="b4">block 4 content</div>
+    <div class="b5">block 5 content</div>
+</body>
+</html>

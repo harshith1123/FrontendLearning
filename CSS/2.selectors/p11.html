@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute Selectors</title>
+    <style>
+        button[class~='btn']{
+            background-color: slateblue;
+            border: none;
+            padding: 8px 10px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Attribute Selectors [attr~=value]</h1>
+    <!-- css style apply to the block  of which value is present at individual position, not combinate with any other  -->
+    <button class="btn">Button-1</button>
+    <button class="add-btn">Button-2</button>
+    <button class="btn-sum">Button-3</button>
+    <button class="btn link">Button-4</button>
+    <button class="alert btn">Button-5</button>
+    <button class="btn clear">Button-6</button>
+    <button class="btn">Button-7</button>
+</body>
+</html>

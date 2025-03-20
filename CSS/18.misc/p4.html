@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p span{
+            font-size: 2rem;
+            padding: 0px 16px;
+            background-image: linear-gradient(to bottom right, gold, green);
+            border-radius: 1rem;
+        }
+
+        .ex1{box-decoration-break: clone;}
+        .ex2{box-decoration-break: slice;}
+    </style>
+</head>
+<body>
+    <h1>box-decoration-break</h1>
+
+    <p>
+        <span class="ex1">Welcome to <br>the css <br> box property </span>
+    </p>
+    <p>
+        <span class="ex2">Welcome to <br>the css <br>box property </span>
+    </p>
+</body>
+</html>

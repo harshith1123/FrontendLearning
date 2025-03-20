@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Meter tag</h1>
+    <!-- static values, fixed values, measurements, -->
+
+    <h1>Student marks 69%</h1>
+    <meter min="0" max="100" value="69" style="width: 100%;"></meter>
+
+    <hr>
+    <h1>Input type range</h1>
+    <form action="">
+        <label for="">Range</label>
+        <input type="range" name="width" id="weight" min="0" max="100" step="0.5" value="1" style="width: 100%;">
+    </form>
+    <h2 id="out"></h2>
+
+    <script>
+        var wgt= document.getElementById('weight');
+        var out= document.getElementById('out');
+
+        wgt.onchange = function(){
+            out.innerText = wgt.value + "kg";
+        }
+    </script>
+</body>
+</html>

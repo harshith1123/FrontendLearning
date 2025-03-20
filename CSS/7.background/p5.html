@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 500px;
+            padding: 20px;            
+        }
+        .b1,.b2,.b3,.b4{
+            width: 500px;
+            height: 200px;
+            margin: 10px;
+            padding: 10px;
+            border: 10px dashed gray;
+            background-image: url(./image.png);
+        }
+        h1{
+            font-size: 4rem;
+            text-align: center;
+        }
+        .b1{
+            background-blend-mode: normal;
+        }
+        .b2{
+            background-blend-mode: multiply;
+        }
+        .b3{
+            background-blend-mode: hard-light;
+        }
+        .b4{
+            background-blend-mode: difference;
+            
+        }
+    </style>
+</head>
+<body>
+    <!-- background-blend -->
+     <section class="container">
+        <div class="b1">
+            <h1>Normal</h1>
+        </div>
+
+        <div class="b2">
+            <h1>Multiply</h1>
+        </div>
+
+        <div class="b3">
+            <h1>Hard-light</h1>
+        </div>
+
+        <div class="b4">
+            <h1>Difference</h1>
+        </div>
+     </section>
+</body>
+</html>

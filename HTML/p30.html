@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #canv{
+            border: 2px solid black;
+            width: 400px;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Canvas Tag</h1>
+    <canvas id="canv"></canvas>
+    <script>
+        let canv = document.getElementById('canv');
+        let context = canv.getContext("2d");
+        context.fillStyle = "red"; //to fill colour
+        //context.fillRect(50,60,100,50); //to create rectangular shape
+        //context.strokeRect(30,40,100,50); //to create a rectangular shape border
+        context.font="32px sansserif"; //to apply the font style and size
+        //context.strokeText("Welcome To HTML", 10, 60); // to display text outline
+        context.fillText("Welcome To HTML", 10, 60);// to display coloured text 
+    </script>
+</body>
+</html>

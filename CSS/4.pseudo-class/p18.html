@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ol{
+            list-style-type: upper-alpha;
+            color: green;
+        }
+        :where(ol,ul) :where(ol,ul){
+            color: red;
+        }
+        :where(ol,ul) :where(ol,ul) ol{
+            color: blueviolet;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>:where()</h1>
+    <ol>
+        <li>Frontend</li>
+        <li>
+            <ul>
+                <li>Html</li>
+                <li>Css</li>
+                <li>JS</li>
+                <li>
+                    <ol>
+                        <li>Basics</li>
+                        <li>Oojs</li>
+                        <li>EcmaScript</li>
+                    </ol>
+                </li>
+            </ul>
+        </li>
+        <li>Backend</li>
+    </ol>
+</body>
+</html>

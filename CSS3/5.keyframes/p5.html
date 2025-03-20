@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .circle{
+            width: 200px;
+            height: 200px;
+            background-image: linear-gradient(to top right, deepskyblue,orange,darkgreen);
+            border-radius: 50%;
+            animation-name: circle;
+            animation-duration: 3s;
+            animation-delay: 0s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+        }
+
+        .normal{animation-direction:normal;}
+        .rev{animation-direction:reverse;}
+        .alt{animation-direction:alternate;}
+        .alt-rev{animation-direction:alternate-reverse;}
+        @keyframes circle {
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(369deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>animation-direction</h1>
+
+    <h3>normal</h3>
+    <div class="circle normal"></div>
+
+    <h3>reverse</h3>
+    <div class="circle rev"></div>
+
+    <h3>alternate</h3>
+    <div class="circle alt"></div>
+
+    <h3>alternate-reverse</h3>
+    <div class="circle alt-rev"></div>
+
+</body>
+</html>

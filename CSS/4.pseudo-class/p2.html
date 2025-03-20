@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav{
+            width: 80%;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            position: fixed;
+            top: 0;
+        }
+        a{
+            text-decoration: none;
+            padding: 10px 12px;
+            background-color: slategray;
+            color: white;            
+        }
+        .container{
+            width: 100%;
+            height: 100%;
+            display: flex;
+        }
+        #home,#about,#contact{
+            height: 100vh;
+            width: 100%;
+        }
+        a:focus{
+            background-color: orange;
+        }
+        .container div:target{
+            background-color: salmon;
+        }
+    </style>
+</head>
+<body>
+    <h1>:focus and :target</h1>
+    <nav>
+        <a href="#home">Home Section</a>
+        <a href="#about">About Section</a>
+        <a href="#contact">Contact Section</a>
+    </nav>
+
+    <section class="container">
+        <div id="home">
+            <h2>Home Window</h2>
+        </div>
+
+        <div id="about">
+            <h2>About Window</h2>
+        </div>
+
+        <div id="contact">
+            <h2>Contact Window</h2>
+        </div>
+    </section>
+</body>
+</html>

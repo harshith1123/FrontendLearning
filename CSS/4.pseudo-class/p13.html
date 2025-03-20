@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* in first-child, childs must be in series and does not involve any other elements*/
+        h1:first-child{
+            color: red;
+        }
+        .container-1 h1:first-of-type{
+            color: green;
+        }
+        h1:last-of-type{
+            color: tan;
+        }
+        h1:nth-of-type(3){
+            color: violet;
+        }
+    </style>
+</head>
+<body>
+    <h1>:first-of-type, :last-of-type and :nth-of-type(pos)</h1>
+    <div class="container-1">
+        <p>first para</p>
+        <h1>Header tag-1</h1>
+        <h1>Header tag-2</h1>
+        <h1>Header tag-3</h1>
+        <p>sample para</p>
+        <h1>Header tag-4</h1>
+        <p>Sample param</p>
+    </div>
+    <hr>
+
+    <div class="container-2">
+        <p>para tag 1</p>
+        <h1>Header tag 1</h1>
+            <p>para tag 1</p>
+        <h1>Header tag 2</h1>
+            <p>para tag 2</p>
+        <h1>Header tag 3</h1>
+            <p>para tag 3</p>
+        <h1>Header tag 4</h1>
+            <p>para tag 4</p>
+    </div>
+</body>
+</html>

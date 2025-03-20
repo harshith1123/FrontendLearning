@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            width: 100%;
+            height: 100vh;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        div{
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            transition: all 2s;
+        }
+
+        .b1{background-color: salmon;}
+        .b2{background-color: saddlebrown;}
+        .b3{background-color: slateblue;}
+
+        .b1:hover{transform: scale(2,3);}
+        .b2:hover{transform:scaleX(2)}
+        .b3:hover{transform:scaleY(2)}
+        
+    </style>
+</head>
+<body>
+    <h1>scale,scaleX, scaleY</h1>
+
+    <div class="b1"></div>
+    <div class="b2"></div>
+    <div class="b3"></div>
+</body>
+</html>

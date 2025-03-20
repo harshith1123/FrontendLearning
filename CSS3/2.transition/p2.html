@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            width: 50%;
+            padding: 20px;
+            margin: 10px;
+            background-color: orange;
+            font-size: 1.5rem;
+            /* transition: width 3s background-color 2s; */
+            transition: all 3s;
+        }
+        p:hover{
+            width: 10%;
+            background-color: green;
+        }
+        .t1{transition-timing-function: ease;
+            transition-delay: 5s;
+        }
+        .t2{transition-timing-function: ease-in;}
+        .t3{transition-timing-function: ease-in-out;}
+        .t3{transition-timing-function: ease-in-out;}
+        .t4{transition-timing-function: ease-out;}
+        .t5{transition-timing-function: linear;}
+        .t6{transition-timing-function: steps(4);} /* step-start, step-end */
+        .t7{transition-timing-function: cubic-bezier(0.075,0.82,0.165,1);}
+    </style>
+</head>
+<body>
+    <section class="container">
+        <p class="t1">ease</p>
+        <p class="t2">ease-in</p>
+        <p class="t3">ease-in-out</p>
+        <p class="t4">ease-out</p>
+        <p class="t5">linear</p>
+        <p class="t6">steps</p>
+        <p class="t7">custom</p>
+    </section>
+</body>
+</html>

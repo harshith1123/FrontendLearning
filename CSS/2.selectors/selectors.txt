@@ -1,0 +1,32 @@
+Selectors are used to target the html DOM
+
+Types
+
+1. Universal Selector (*)
+
+2. Basic Selectors
+    a. HTML tag Selector
+    b. Class Selector (.class name)
+    c. ID Selector (#id_name)
+
+3. Group Selectors (,)
+
+4. Compound Selector (selector.class)
+
+5. Combinators
+    a. Descendant (space)
+    b. Child (>)
+    c. General Sibiling (~)
+    d. Adjacent Sibling (+)
+
+6. Attribute Selectors
+    a. [attr]
+    b. [attr=value]
+    c. [attr~=value]
+    d. [attr^=value]
+    e. [attr$=value]
+    f. [attr*=value]
+
+7. Pseudo Selectors
+    a. Pseudo class (:)
+    b. Pseudo Element (::)

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Datalist</h1>
+
+    <form action="">
+        <label for="">Technology Name</label>
+        <input type="text" name="technology" id="technology" list="tech"><br><br>
+        <label for="">Phone numbers</label>
+        <input type="text" name="number" id="number" id="phone">
+        
+    </form>
+    <datalist id="tech">
+        <option value="html"></option>
+        <option value="css"></option>
+        <option value="javascript"></option>
+        <option value="bootstrap"></option>
+        <option value="react"></option>
+    </datalist>
+
+    
+    <!-- Not Working (marked for doubt) -->
+    <datalist id="phone"> 
+        <option value="1234567890"></option>
+        <option value="1214567890"></option>
+        <option value="1254567890"></option>
+        <option value="1224567890"></option>
+        <option value="9224567890"></option>
+    </datalist>
+</body>
+</html>

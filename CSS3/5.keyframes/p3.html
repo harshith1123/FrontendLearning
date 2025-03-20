@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        .ball{
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+            border-radius: 50%;
+            animation-name: anim1; /* animation time */
+            animation-duration: 5s; /* time to complete one cycle of animation */
+            animation-iteration-count: infinite; /* animation timing function */
+            animation-timing-function: steps(5); /* number of animation cycles */
+            animation-delay: 4s; /* delay*/
+            
+        }
+        @keyframes anim1{
+            0%{
+                transform: translate(0px,0px);
+                
+            }
+            25%{
+                transform: translate(25vw,80vh);
+                background-color: aqua;
+            }
+            50%{
+                transform: translate(50vw,0px);
+                background-color: salmon;
+            }
+            75%{
+                transform: translate(75vw,80vh);
+                background-color: sandybrown;
+            }
+            90%{
+                transform: translate(92vw, 0px);
+                background-color: seagreen;
+            }
+            100%{
+                transform: translate(0px,0px);
+                background-color: olive;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="ball"></div>
+</body>
+</html>

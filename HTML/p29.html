@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Dialogue</h1>
+    <button id="btn-show">Show Dialogue</button>
+    <dialog id="custom">
+        <button id="btn-cls">Close</button>
+        <h1>Custom Popup Dialogue</h1>
+        <p>are you sure to logout</p>
+        <div>
+            <button>No</button>
+            <button>Yes</button>
+        </div>
+    </dialog>
+    <script>
+        let showBtn = document.getElementById('btn-show');
+        let clsBtn = document.getElementById('btn-cls');
+        let dia = document.getElementById('custom');
+
+        showBtn.onclick=function(){
+            dia.show();
+        }
+
+
+        clsBtn.onclick= function(){
+            dia.close();
+        }
+    </script>
+</body>
+</html>

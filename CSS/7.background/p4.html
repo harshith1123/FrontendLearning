@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 500px;
+            padding: 20px;            
+        }
+        .b1,.b2,.b3,.b4{
+            width: 400px;
+            height: 200px;
+            margin: 10px;
+            padding: 10px;
+            border: 10px dashed gray;
+            background-image: url(./image.png);
+            background-repeat: no-repeat;
+        }
+        h1{
+            font-size: 4rem;
+            text-align: center;
+        }
+
+        /* origin applies to x-axis and y axis  */
+        .b1{
+            background-origin: border-box;
+        }
+        .b2{
+            background-origin: padding-box;
+        }
+        .b3{
+            background-origin: content-box;
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- background-origin -->
+     <section class="container">
+        <div class="b1">
+            <h1>Border-box</h1>
+        </div>
+
+        <div class="b2">
+            <h1>Padding-box</h1>
+        </div>
+
+        <div class="b3">
+            <h1>Content-box</h1>
+        </div>        
+     </section>
+</body>
+</html>

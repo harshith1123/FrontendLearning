@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form tags</title>
+</head>
+<body>
+    <h1>Form Tags</h1>
+    <!-- form tag used for accepting user input -->
+     <!-- 
+        the tags/elements of form
+        input tag - various types of input elements
+        label tag - to add label to the input
+        text area tag - multiline text input
+        select tag - drop down menu input
+        field set tag - draw a border line around the form 
+        legend tag - to add a title by breaking the fieldset 
+
+        attributes:
+        action - in action we specify the action path / a server address
+        method - decides the type of the input sent to the server 
+                -> get method prints the data in the address bar 
+                -> post method hides the data
+        autocomplete - (on) accept the cached history of browser, (off) won't accept the cached history of the browser
+        enctype - application/x-www-form-urlencoded (default)
+                - multipart/form-data = select only when you have input type file
+     -->
+        <form action="" enctype="application/x-www-form-urlencoded" autocomplete="off" method="post" >
+            <fieldset>
+              <legend>Login Form</legend>
+              <label for="user"> Your Username</label>
+              <input type="text" name="user" id="user" placeholder="Enter your username" required>
+
+              <br><br>
+              <label for="pass">Your Password</label>
+              <input type="password" name="pass" id="pass" placeholder="min 6 & max 12 character" minlength="6" maxlength="12" required>
+
+              <br><br>
+              <input type="submit" value="login">
+              <input type="reset" value="clear">
+            </fieldset>
+
+        </form>
+        <!-- input attributes
+            type - decides the type of the input tag
+                    (text,number,email,password,checkbox,radio,file,date,datetime,dattime-local,time,month,week,colour,search,tel,submit,reset,hiddenz)
+            name - mandatory for all inputs (field name)
+            id - selector property
+            placeholder - hint for users
+            required - mandatory to fill the form input
+            value - default value
+            readonly - restrict the write operation for user
+            disable - disable the input
+            minlength - minimum input length (only for string)
+            maxlength - maximum input length (only for string)
+            min - minimum for number
+            max - maximum for number
+            -->
+</body>
+</html>

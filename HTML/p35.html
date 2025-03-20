@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #pro {
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <H1>Emoji Shape</H1>
+    <canvas id="pro" height="400" width="400"></canvas>
+
+    <script>
+        function draw() {
+            let canvas = document.getElementById("pro");
+
+            if (canvas.getContext){
+                let ctx = canvas.getContext("2d");
+                ctx.beginPath();
+
+                //arc(x, y, radius, startAngle, endAngle, boolean) - true=clockwise, false=anticlockwise
+                ctx.arc(75,75,50,0, Math.PI * 2, true);
+                ctx.moveTo(110,75);
+
+                ctx.arc(75,75,35,0, Math.PI, false);
+                ctx.moveTo(65,65);
+
+                ctx.arc(60,65,5,0,Math.PI*2,true);
+                ctx.moveTo(95,65);
+
+                ctx.arc(90,65,5,0,Math.PI*2,true);
+
+                ctx.stroke();
+            }
+        }
+        draw()
+    </script>
+</body>
+</html>

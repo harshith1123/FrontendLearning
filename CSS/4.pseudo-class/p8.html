@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p:first-child{
+            color: red;
+            font-weight: bold;
+        }
+        p:nth-child(3){
+            color: yellow;
+        }
+        p:last-child{
+            color: green;
+            font-style: italic;
+        }
+        table,tr,th,td{
+            border: 2px solid black;
+            border-collapse: collapse;
+            padding: 20px;
+        }
+        tr:last-child{
+            color: rebeccapurple;
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <h1>:first-child, :last-child and :nth-child(position)</h1>
+        <p>paragraph1</p>
+        <p>paragraph1</p>
+        <p>paragraph1</p>
+        <p>paragraph1</p>
+        <p>paragraph1</p>
+        <p>paragraph1</p>
+        <p>paragraph1</p>
+        <p>paragraph1</p>
+    </div>
+
+        <hr>
+        <ul>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+        </ul>
+        <hr>
+        <table>
+            <tr>
+                <th>name</th>
+                <th>email</th>
+            </tr>
+            <tr>
+                <td>john</td>
+                <td>john@gmail.com</td>
+            </tr>
+            <tr>
+                <td>sam</td>
+                <td>sam@gmail.com</td>
+            </tr>
+            <tr>
+                <td>smith</td>
+                <td>smith@gmail.com</td>
+            </tr>
+        </table>
+    
+</body>
+</html>

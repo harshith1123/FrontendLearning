@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input[type='radio']:default{
+            outline: 2px solid green;
+        }
+        input[type='radio']:checked{
+            outline: 2px solid gold;
+        }
+        input[type='checkbox']:checked{
+            outline: 2px solid rgb(106, 0, 255);
+        }
+    </style>
+</head>
+<body>
+    <h1>:checked(radio, checkbox), :default</h1>
+
+    <form action="">
+        <label for="">Gender</label>
+        <label>
+            Male<input type="radio" name="gender" id="gender" value="male">
+        </label>
+        <label>
+           Female <input type="radio" name="gender" id="gender" value="female" checked>
+        </label>
+        <label>
+           Transgender <input type="radio" name="gender" id="gender" value="Transgender">
+        </label>
+    </form>
+
+    <form action="">
+        <label for="">Choose Technologies</label>
+        <br><br>
+        <label>
+            HTML <input type="checkbox" name="" id="">
+        </label>
+        <label>
+            CSS <input type="checkbox" name="" id="">
+        </label>
+        <label>
+            Javascript <input type="checkbox" name="" id="">
+        </label>
+    </form>
+</body>
+</html>

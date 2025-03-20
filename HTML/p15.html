@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payslip</title>
+    <style>
+        table{ 
+            width: 700px;
+        }
+        table,
+        tr,
+        td,
+        th{
+            border: 1px solid black;
+            text-align: center;
+            border-collapse: collapse; 
+            
+        }
+        td,
+        th{
+            padding: 10px;
+        }
+        .p15{
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Payslip Table</h1>
+    <table>
+        <tr>
+            <th class="p15">Company Logo</th>
+            <th class="p15">Company Name <br> Company Address</th>
+        </tr>
+        <tr>
+            <td colspan="2">Payslip for the month of february 2025</td>
+        </tr>
+    </table> <br>
+    <table>
+        <tr>
+            <th>Employee Name:</th>
+            <td>Rajesh Gowda</td>
+            <th>Paid Days:</th>
+            <td>30</td>
+        </tr>
+        <tr>
+            <th>Gender:</th>
+            <td>Male</td>
+            <th>LOP Days:</th>
+            <td>0</td>
+        </tr>
+    </table> <br>
+    <table>
+        <tr>
+            <th>Earnings</th>
+            <th>Amount</th>
+            <th>Deductions</th>
+            <th colspan="2">Amount</th>
+        </tr>
+        <tr>
+            <td colspan="2">Basic</td>
+            <td>10,0000</td>
+            <td>Salary Advance</td>
+            <td>1,000</td>            
+        </tr>
+        <tr>
+            <td>OT Hours</td>
+            <td>50</td>
+            <td rowspan="2"></td>
+            <td>other deductions</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>OT Rate</td>
+            <td>75</td>
+            <td rowspan="2"></td>
+        </tr>
+        <tr>
+            <td colspan="2">OT Payment</td>
+            <td>3750</td>
+        </tr>
+        <tr>
+            <th colspan="2">Total Payment</th>            
+            <th>18,750</th>            
+            <th>Total Deductions</th>            
+            <th>1,000</th>
+        </tr>
+        <tr>
+            <th colspan="2">Netpay:</th>
+            <th>12.750</th>
+            <td colspan="2"></td>
+        </tr>
+    </table>
+</body>
+</html>

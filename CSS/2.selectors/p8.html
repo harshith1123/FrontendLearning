@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>General Sibling</title>
+    <style>
+        .container,.container-1{
+            background-color: purple;
+            padding: 20px;
+        }
+        .card, .card-1{
+            width: 300px;
+            background-color: orange;
+            padding: 20px;
+        }
+        /* general sibling  */
+        .card ~ p{
+            background-color: red;
+            color: white;
+            padding: 20px;
+        }
+        /* adjacent sibling */
+        .card-1 + p{
+            background-color: red;
+            color: white;
+            padding: 20px;
+        }
+        .card-1 ~ h1{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>General Sibling (~)</h1>
+    <section class="container">
+        <div class="card">
+            <h3>Card Block</h3>
+        </div>
+        <p>Paragraph-1</p>
+        <p>paragraph-2</p>
+        <p>Paragraph-3</p>
+    </section>  
+
+    <h1>Adjacent Sibling (+)</h1>
+    <section class="container-1">
+        <div class="card-1">
+            <h3>Card-1 Block</h3>
+        </div>
+        <p>Paragraph-1</p>
+        <p>paragraph-2</p>
+        <p>Paragraph-3</p>
+        <h1>First Header</h1>
+        <h1>Second Header</h1>
+    </section>
+
+</body>
+</html>

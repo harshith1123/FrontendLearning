@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        dialog::backdrop{
+            background-color: slateblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>::backdrop</h1>
+    <button id="shBtn">Show Dialog</button>
+    <dialog id="alert">
+        <button id="cls">Close</button>
+        <h1>Alert Dialog</h1>
+    </dialog>
+
+    <script>
+        let alert=document.getElementById("alert");
+        let shBtn=document.getElementById('shBtn');
+        let clsBtn=document.getElementById('cls');
+
+        shBtn.onclick=function(){
+            // alert.show() // only to display dialog box
+            alert.showModal(); // to display dialog box with backdrop
+        }
+        clsBtn.onclick = function(){
+            alert.close();
+        }
+    </script>
+</body>
+</html>

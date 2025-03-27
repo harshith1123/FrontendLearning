@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        i-phone 4 -> min=320px and max=480px and pixel ratio=2
+        i-phone-6 -> min=375px and max=667px and pixel ratio=2
+        iphone 6+,7,7+ 8 
+        */
+        .container{
+            width: 100%;
+            height: 100vh;
+        }
+        @media screen and (min-width:375px) and (max-width:667px) and (-webkit-min-device-pixel-ratio:2){
+            .container{
+                background-color: crimson;
+            }
+        }
+        @media screen and (min-width:375px)  and (max-width:667px) and (-webkit-min-device-pixel-ratio:2) and (orientation:landscape){
+            .container{
+                background-color: deepskyblue;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container"></div>
+</body>
+</html>

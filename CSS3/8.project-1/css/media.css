@@ -1,0 +1,8 @@
+@media screen and (max-width:990px){
+    .menu-items{
+        display: none;
+    }
+    .toggler-button{
+        display: block;
+    }
+}

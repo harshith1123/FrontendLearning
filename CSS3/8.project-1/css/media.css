@@ -5,4 +5,72 @@
     .toggler-button{
         display: block;
     }
+    .menu-items.active-menu{
+        display: block;
+        position: fixed;
+        top:0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        background-color: var(--white);
+        height: 100%;
+        width: 30%;
+        align-items: center;
+        padding-top: 3rem;
+        justify-content: space-evenly;        
+        animation: leftSlide 1s linear 1;
+        transition: all 1s;
+    }
+    #home{
+        padding-top: 3rem;
+    }
+    #home .container .image{
+        width: 0%;
+    }
+    #about, #projects, #resume, #contact{
+        height: 100%;
+    }
+    #about .container{
+        width: 100%;
+        display: flex;        
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;        
+    }
+    #about .about-img img{
+        width: 100%;
+    }
+    #about .about-content{
+        width: 100%;
+    }
+    #about .about-content .card:nth-child(2){
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: columm;
+    }
+    #resume .container{
+        height: 100%;
+    }
+    .resume-content .skills-list{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+    #projects .project-cards{
+        flex-direction: column;
+    }
+    #contact .contact-content{
+        flex-direction: column;
+    }
+}
+@keyframes leftSlide {
+    0%{
+        transform: translateX(-200px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
 }

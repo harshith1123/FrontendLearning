@@ -32,3 +32,21 @@ let first = "John";
 let last = "Harry";
 document.writeln(`<h4>type of first variable name is ${typeof first} and last variable is ${typeof last}</h4>`)
 document.writeln(`<h3>My first name is ${first} and last name is ${last}</h3>`)
+
+console.log("\n")
+
+// boolean
+var b1 = true;
+var b2 = false;
+
+// null and undefined
+var x1 = null;
+var x2 = undefined;
+
+console.log(`null =`,x1)
+console.log(`null =`,typeof x1)  // object
+
+console.log(`undefined =`,x2)  
+console.log(`undefined =`,typeof x2)  // undefined
+
+

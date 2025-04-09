@@ -76,6 +76,7 @@ for(let i=1;i<=5;i++){
               1
 */
 
+
 /* 
 *
 * *
@@ -83,6 +84,14 @@ for(let i=1;i<=5;i++){
 * * * *
 * *  * *
 */
+document.writeln("<hr>")
+for(let i=1;i<5;i++){
+  for(let j=1;j<=i;j++){
+    document.writeln(`*`)
+  }
+  document.writeln("<br>")
+}
+document.writeln("<hr>")
 
 /* 
 * * * * *
@@ -91,6 +100,13 @@ for(let i=1;i<=5;i++){
 * *
 *
 */
+for(let i=5;i>=1;i--){
+  for(j=1;j<=i;j++){
+    document.writeln('*')
+  }
+  document.writeln("<br>")
+}
+document.writeln("<hr>")
 
 /*    
         *
@@ -99,3 +115,11 @@ for(let i=1;i<=5;i++){
     *   *  *  *
    *  *   *  *  * 
  */
+
+for(let i=1;i<=5;i++){
+  document.writeln('<span>&nbsp;</span>')
+  for(let j=1;j<=i;j++){
+    document.writeln('*')
+  }
+  document.writeln('<br>')
+}

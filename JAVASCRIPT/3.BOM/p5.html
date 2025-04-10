@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>close()</h1>    
+
+    <button onclick="openHandler()">Open Window</button>
+    <button onclick="clsHandler()">Close Window</button>
+
+    <script>
+        var x;
+        function openHandler(){
+            x =open("./p4.html","sample title","width=400;height:300")
+        }
+        function clsHandler(){
+            x.close()
+        }
+    </script>
+</body>
+</html>

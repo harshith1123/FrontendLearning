@@ -7,7 +7,6 @@ function printName(name){
 // through event listeners
 var btnEl = document.getElementById("btn")
 
-// through event listener
 // dom_element.addEventListener("click",function(parameter){})
 
 btnEl.addEventListener("click",function(event){

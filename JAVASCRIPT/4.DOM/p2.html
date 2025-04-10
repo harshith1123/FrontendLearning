@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>concat</h1>
+    <button onclick="getDetails()">Get Details</button>
+    <script>
+        var age = 23;
+        var name = "john"
+
+        // user name is john and his age is 23
+        document.writeln("<h1>user name is "+name+" and his age "+age +".</h1>")
+        document.writeln(`<h1>user name is ${name} and his age ${age}. </h1>`)
+
+        /* 
+        Task 1 accept input through prompt using function
+        name
+        email
+        city
+        
+        message
+        Hi i'm name , my email id is email and i live in city*/
+
+        function getDetails(){
+            let name = prompt("Enter your name")
+            let email = prompt("Enter your email")
+            let city = prompt("Enter your city")
+            document.writeln(`<h3>Hi I'm ${name}, my mail id is ${email} and I live in ${city} </h3>` )
+        }
+        
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Prompt</h1>
+
+    <button onclick="getProduct()">Product</button>
+    <script>
+        // prompt is used to accept input from user and type of input always string
+        function getProduct(){
+            let x = prompt("Enter number x?")
+            let y = prompt("Enter number y?")
+
+            document.writeln(`<h3> product = ${x * y}`)
+        }
+    </script>
+</body>
+</html>

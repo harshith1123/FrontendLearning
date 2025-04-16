@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>document.getElementByName("name")</h1>
+    <form>
+        <div>
+            <label for="lang">Choose Program Languages</label>
+
+            <label>
+                <input type="checkbox" name="lang" id="lang" value = "ka"> Kannada
+            </label>
+            <label>
+                <input type="checkbox" name="lang" id="lang" value = "en"> English
+            </label>
+            <label>
+                <input type="checkbox" name="lang" id="lang" value = "hi"> Hindi
+            </label>
+            <label>
+                <input type="checkbox" name="lang" id="lang" value = "ta"> Tamil
+            </label>
+            <label>
+                <input type="checkbox" name="lang" id="lang" value = "te"> Telugu
+            </label>
+        </div>
+        <p class="ordered"></p>
+    </form>
+
+    <hr>
+    <button onclick="handler()">Click me</button>
+    <script>
+        function handler(){
+            let els = document.getElementsByName("lang")
+            let ordEl = document.querySelector(".ordered")
+            let data=[]
+            console.log("values =",els)
+            console.log("length =",els.length)
+
+            els.forEach(function(item,index){
+                console.log("item =",item.checked)
+                if(item.checked){
+                    data.push(item.value)
+                    console.log("All checked items are =",data)
+                }
+            })
+           data.forEach(function(val){
+                document.writeln(`<li>${val}</li>`)
+           })
+        }
+    </script>
+</body>
+</html>

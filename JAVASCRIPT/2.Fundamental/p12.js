@@ -42,6 +42,13 @@ course[1] ={
 }
 
 console.log(`course =`,course)
+for(let i in course){
+    console.log(`course at ${i}th index=`,course[i])
+}
+
+for(let i of course){
+    console.log(`${i.id}`)
+}
 
 // array using constructor (parameter)
 var bikes = new Array({id:1, title:"hero"},{id:2,title:"tvs"},{id:3,title:"honda"})

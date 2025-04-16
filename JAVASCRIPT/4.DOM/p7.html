@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>document.querySelectorAll()</h1>
+
+    <div class="blk">block</div>
+    <div class="blk">block</div>
+    <div class="blk">block</div>
+    <div class="blk">block</div>
+    <div class="blk">block</div>
+    <div class="blk">block</div>
+    <div class="blk">block</div>
+    <hr>
+
+    <button onclick="handler()">Click Me</button>
+
+    <script>
+        function handler(){
+            let blkEls = document.querySelectorAll(".blk")
+            console.log('length =',blkEls.length)
+            console.log('blkEls =',blkEls)
+            blkEls.forEach(function(val,index){
+                val.style.backgroundColor = "green"
+                val.style.padding = "30px"
+                val.style.margin = "20px"
+            })
+        }
+    </script>
+</body>
+</html>

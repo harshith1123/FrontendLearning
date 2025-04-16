@@ -15,7 +15,7 @@
 <body>
     <h1>document.getElementById(id)</h1>
 
-    <button onclick="handler()">Login</button>
+    <button onclick="handler()" id="btn">Login</button>
     <hr>
 
     <div id="out"></div>
@@ -26,6 +26,10 @@
 
             let res = x* y;
             document.getElementById("out").innerHTML=`<h1>Product= ${res}</h1>`;
+            document.getElementById("btn").innerText="Button Clicked";
+            document.getElementById("out").style.backgroundColor="green";
+            document.getElementById("out").style.color = "white"
+            document.getElementById("out").style.padding = "10px"
         }
     </script>
 </body>

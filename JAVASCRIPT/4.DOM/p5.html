@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="p5.css">
+</head>
+
+<body>
+    <section class="container">
+        <div class="registration">
+            <h2>Registration</h2>
+            <h4>Personal Details</h4>
+            <form autocomplete="off" class="user-details" onsubmit="getRegisterDetails(event)">
+                <div class="details">
+                    <div class="personal-details">
+                        <div>
+                            <label for="fname">Full Name</label>
+                        </div>
+                        <div>
+                            <input type="text" name="fname" id="fname" placeholder="Enter your name" required>
+                        </div>
+                    </div>
+                    <div class="personal-details">
+                        <div>
+                            <label for="fdob">Date of Birth</label>
+                        </div>
+                        <div>
+                            <input type="date" class="date" name="fdob" id="fdob" placeholder="Enter birth date" required>
+                        </div>
+                    </div>
+
+                    <div class="personal-details">
+                        <div>
+                            <label for="femail">Email</label>
+                        </div>
+                        <div>
+                            <input type="email" name="femail" id="femail" placeholder="Enter your email" required>
+                        </div>
+                    </div>
+                    
+                    <div class="personal-details">
+                        <div>
+                            <label for="fphnum">Mobile Number</label>
+                        </div>
+                        <div>
+                            <input type="number" name="fphnum" id="fphnum" placeholder="Enter mobile number" required> 
+                        </div>
+                    </div>
+                    <div class="personal-details">
+                        <div>
+                            <label for="fgender">Gender</label>
+                        </div>
+                        <div>
+                            <input type="text" name="fgender" id="fgender" placeholder="Enter your gender" required>
+                        </div>
+                    </div>
+                    <div class="personal-details">
+                        <div>
+                            <label for="foccup">Occupation</label>
+                        </div>
+                        <div>
+                            <input type="text" name="foccup" id="foccup" placeholder="Enter occupation" required>
+                        </div>
+                    </div>
+                </div>
+                <h4>Identity Detials</h4>
+                <div class="details">
+                    <div class="identity-details">
+                        <div>
+                            <label for="fidtype">Id Type</label>
+                        </div>
+                        <div>
+                            <input type="text" name="fidtype" id="fidtype" placeholder="Enter Id type" required>
+                        </div>
+                    </div>
+                    <div class="identity-details">
+                        <div>
+                            <label for="fidnum">ID Number</label>
+                        </div>
+                        <div>
+                            <input type="number" name="fidnum" id="fidnum" placeholder="Enter ID Number" required>
+                        </div>
+                    </div>
+
+                    <div class="identity-details">
+                        <div>
+                            <label for="fiddept">Issue Authority</label>
+                        </div>
+                        <div>
+                            <input type="text" name="fiddept" id="fiddept" placeholder="Enter issue department" required>
+                        </div>
+                    </div>
+                    
+                    <div class="identity-details">
+                        <div>
+                            <label for="fiddate">Issue Date</label>
+                        </div>
+                        <div>
+                            <input type="date" class="date" name="fiddate" id="fiddate" placeholder="Enter ID issue date" required>
+                        </div>
+                    </div>
+                    <div class="identity-details">
+                        <div>
+                            <label for="fidstate">Issue State</label>
+                        </div>
+                        <div>
+                            <input type="text" name="fidstate" id="fidstate" placeholder="Enter ID issue state" required>
+                        </div>
+                    </div>
+                    <div class="identity-details">
+                        <div>
+                            <label for="fidexp">Expiry Date</label>
+                        </div>
+                        <div>
+                            <input type="date" class="date" name="fidexp" id="fidexp" placeholder="Enter ID expiry date" fidexp>
+                        </div>
+                    </div>
+                </div>
+                <div class="submission">
+                    <input type="submit" id="fbtn" class="button" value="Next">
+                </div>
+            </form>
+        </div>        
+    </section>
+
+    <script>
+        let nameEl = document.getElementById("fname")
+        let dobEl = document.getElementById("fdob")
+        let emailEl = document.getElementById("femail")
+        let mblEl = document.getElementById("fphnum")
+        let gendEl = document.getElementById("fgender")
+        let occupEl = document.getElementById("foccup")
+        
+        let idtyEl = document.getElementById("fidtype")
+        let idnumEl = document.getElementById("fidnum")
+        let idissAuthEl = document.getElementById("fiddept")
+        let issueDateEl = document.getElementById("fiddate")
+        let issueStateEl = document.getElementById("fidstate")
+        let expiryDateEl = document.getElementById("fidexp")
+        let btnEl = document.getElementById('fbtn')
+
+        function getRegisterDetails(event){
+            event.preventDefault();
+
+            let userData ={
+                'name':nameEl.value,
+                'dob':dobEl.value,
+                'email':emailEl.value,
+                'phone':mblEl.value,
+                'gender':gendEl.value,
+                'occupation':occupEl.value,
+                'idtype':idtyEl.value,
+                'idnumber':idnumEl.value,
+                'issueAuthority':idissAuthEl.value,
+                'issueDate':issueDateEl.value,
+                'issueState':issueStateEl.value,
+                'expiryDate':expiryDateEl.value
+            }
+            alert("Data Submitted Successfully")
+            console.log(`user data=`,userData)
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+.container{
+   width: 100%;
+   height: 100vh;
+   background-color: #141485de;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.registration{    
+    background-color: #fff;
+    width: 65%;
+    height: 90%;
+    padding: 5px 20px;    
+    
+}
+.registration h4{
+    color: grey;
+}
+
+.details{
+    width: 100%;    
+    display: grid;
+    grid-template-columns: repeat(3,250px);
+}
+.personal-details,.identity-details{
+    padding: 5px 15px;
+}
+
+ input{
+    padding: 5px 10px;
+    margin-bottom: 10px;
+}
+.submission{
+    margin-left: 15px;
+}
+.date{
+    width: 185px;
+}
+.button{
+    width: 200px;
+    padding: 8px 10px;
+    background-color: rgb(36, 36, 204);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+    cursor: pointer;
+    
+}
+

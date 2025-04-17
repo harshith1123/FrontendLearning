@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>document.getElementsByTagName()</h1>
+
+    <div>
+        <p>sample para</p>
+        <p>sample para</p>
+        <p>sample para</p>
+        <p>sample para</p>
+        <p>sample para</p>
+        <p>sample para</p>        
+    </div>
+    <hr>
+
+    <section>
+        <h3>header section</h3>
+        <h3>header section</h3>
+        <h3>header section</h3>
+        <h3>header section</h3>
+        <h3>header section</h3>
+        <h3>header section</h3>
+    </section>
+
+    <button onclick="handler()">click me</button>
+
+    <script>
+        function handler(){
+            let paraEl = document.getElementsByTagName("p");
+            let h3El = document.getElementsByTagName("h3")
+
+            console.log("paraEl = ",paraEl)
+            console.log("h3El =",h3El)
+
+            for(let i =0;i<paraEl.length;i++){
+                paraEl[i].style.color = "red"
+                paraEl[i].style.textAlign = "center"
+                paraEl[i].style.fontSize ="2rem"
+            }
+            for(let val of h3El){
+                val.style.backgroundColor="green"
+                val.style.padding="20px"
+            }
+
+            
+        }
+    </script>
+</body>
+</html>

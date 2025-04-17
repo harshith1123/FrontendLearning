@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>document.getElementByClassName(class)</h1>
+    <section>
+        <p>sample paragraph text</p>
+        <p>sample paragraph text</p>
+        <p class="p1">sample paragraph text</p>
+        <p>sample paragraph text</p>
+        <p>sample paragraph text</p>
+        <p>sample paragraph text</p>
+        <p class="p1">sample paragraph text</p>
+        <p>sample paragraph text</p>    
+    </section>
+    <hr>
+    <main>
+        <p>sample paragraph text</p>
+        <p>sample paragraph text</p>
+        <p class="p1">sample paragraph text</p>
+        <p>sample paragraph text</p>
+        <p>sample paragraph text</p>
+        <p>sample paragraph text</p>
+        <span class="p1">sample paragraph text</span>
+        <p>sample paragraph text</p>    
+    </main>
+
+    <button onclick="handler()">Click Me</button>
+    <script>
+        function handler(){
+            let p1El = document.getElementsByClassName("p1")
+            console.log('p1El =',p1El)
+
+            let i =0
+            while(i<p1El.length){
+                p1El[i].style.color="green"
+                p1El[i].style.fontSize = "30px"
+                p1El[i].style.textAlign = "center"
+                i++
+            }
+        }
+    </script>
+</body>
+</html>

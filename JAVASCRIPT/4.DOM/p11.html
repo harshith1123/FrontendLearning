@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>document.activeElement</h1>
+    <p>is readonly property</p>
+
+    <form action="">
+        <div>
+            <label for="msg1">Message-1</label><br>
+            <textarea onfocus="handler(event)" name="msg1" id="msg1" cols="30" rows="6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non veniam placeat, nisi itaque ratione dolores, aut blanditiis odio vero officiis aspernatur voluptate, ab accusamus aliquam praesentium ex facilis omnis aliquid?</textarea>            
+        </div>
+
+        <div>
+            <label for="msg2">Message-2</label><br>
+            <textarea onfocus="handler(event)" name="msg2" id="msg2" cols="30" rows="6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non veniam placeat, nisi itaque ratione dolores, aut blanditiis odio vero officiis aspernatur voluptate, ab accusamus aliquam praesentium ex facilis omnis aliquid?</textarea>            
+        </div>
+    </form>
+    <script>
+        function handler(event){
+            // selects the active element
+            let selEl = document.activeElement;
+            console.log("selected element =",selEl)
+
+            // to read complete value of active element
+            let msg = selEl.value;
+            console.log(`msg =`,msg)
+
+            // to separate selected content from value
+            let selTxt = msg.substring(selEl.selectionStart,selEl.selectionEnd)
+            console.log(`selected text =`,selTxt)
+        }
+    </script>
+</body>
+</html>

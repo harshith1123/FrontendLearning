@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>requestFullScreen and exitFullScreen</h1>
+    <h2 id="status"></h2>
+    <button id="fs">FullScreen</button>
+
+    <script>
+        let fsBtn = document.getElementById("fs")
+        let status =document.getElementById("status")
+        
+        fsBtn.onclick = function(){
+            if(document.fullscreenElement){
+                document.exitFullscreen().then(res =>{
+                    status.innerText =`document has exit from full screen`
+                    fsBtn.innerText = `Enter fullscreen`;                    
+                }).catch(err => console.log(err))
+            }else{
+                document.documentElement.requestFullscreen().then(res =>{
+                    status.innerText=`document entered into fullscreen`
+                    fsBtn.innerText = `Exit fullscreen`;                    
+                }).catch(err =>console.log(err.message))
+            }
+        }
+    </script>
+</body>
+</html>

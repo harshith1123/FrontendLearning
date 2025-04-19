@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<dy>
+    <h1>document.createTextNode()</h1>
+
+    <button onclick="handler('yes!..')">Yes</button>
+    <button onclick="handler('no!..')">No</button>
+    <button onclick="handler('we can!..')">We can</button>
+
+    <p id="p1">First line of paragraph</p>
+
+    <script>
+        function handler(txt){
+            let newTxt = document.createTextNode(txt)
+            let p1El = document.getElementById("p1")
+            p1El.appendChild(newTxt)
+        }
+    </script>
+<body>
+</html>

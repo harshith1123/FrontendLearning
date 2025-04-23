@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 100vh;
+            width: 100%;
+            background-color: orange;
+        }
+    </style>
+</head>
+<body oncontextmenu="handler(event)">
+    <h1>oncontextmenu</h1>
+    <script>
+        function handler(event){
+            event.preventDefault(); // to avoid page refresh
+            alert("sorry.. right click menu is disabled..")
+        }
+    </script>
+</body>
+</html>

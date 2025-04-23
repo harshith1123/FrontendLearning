@@ -22,6 +22,9 @@
      </form>
 
      <h1 id="output"></h1>
+     <button onclick="deleteCookie()">Delete</button>
+
+     <h1 id="output"></h1>
      <script>
         let userEl = document.getElementById("user")
         let outEl = document.getElementById("output")
@@ -31,7 +34,7 @@
             let user = userEl.value;
             console.log(`new user =`,user)
 
-            document.cookie = `username=${user};expires=19 April 2025 16:30:00 PM GMT+5.30;SameSite=None;Secure`;
+            document.cookie = `username=${user};expires=${new Date().toLocaleString()}`;
             alert('cookie set successfully')
             window.location.reload(); // reload current page            
         }
@@ -47,6 +50,16 @@
             }
         }
         readHandler()
+
+        function deleteCookie(){
+            if(confirm("Do you wish to delete cookie?")){
+                let today = new Date()
+                today.setTime(today.getTime()-1)
+                document.cookie = `username=;expires=${today.toGMTString()}`
+                alert("cookie deleted successfully")
+                window.location.reload();
+            }
+        }
      </script>
 </body>
 </html>

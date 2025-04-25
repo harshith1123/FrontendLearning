@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Reversing the given input using loop</h1>
+
+    <form onsubmit="submitHandler(event)">
+        <div>
+            <label for="inp">Your input</label>
+            <input type="text" name="inp" id="inp" required>
+        </div>
+
+        <div>
+            <input type="submit" value="Send">
+        </div>
+    </form>
+
+    <hr>
+
+    <div id="output"></div>
+
+    <script>
+        function submitHandler(event){
+            event.preventDefault();
+            let inp = document.getElementById("inp").value;
+            let out = document.getElementById("output")
+
+            let res = " ";
+
+            for(let i = inp.length - 1; i >= 0; i--){
+                res += inp[i]
+            }
+        out.innerHTML = `<h3>input is ${inp} and the output is ${res} </h3>`
+        }
+    </script>
+</body>
+</html>

@@ -2,7 +2,7 @@ var user = ["Tom","Ayan"];
 
 console.log(`user =`,user)
 
-// array.unshif(value)
+// array.unshift(value)
 
 user.unshift("Harry") // first in
 console.log(`after unshift =`,user)

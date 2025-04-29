@@ -4,7 +4,7 @@
 
     let user = [];
     console.log(`user =`,user)
-    // last in
+    // last inc
 
     user.push("john")
     console.log("user =",user)

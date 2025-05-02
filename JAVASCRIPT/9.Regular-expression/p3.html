@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>match()</h1>
+    <script>
+        var str = "welcome";
+
+        var reg = /[i-n]/
+
+        console.log(`string =`,str)
+        console.log(`string match =`,str.match(reg))
+
+        console.log('\n')
+
+        var str1 = "welcome to javascript. Today we are learning JavaScript regular expressions. Javascript is frontend script. Every browser has built in JAVASCRIPT compilers";
+
+        let reg1 = /javascript/;
+        let reg2 = /javascript/i;
+        let reg3 = /javascript/gi;
+
+        console.log(`match =`,str1.match(reg1))
+        console.log(`match =`,str1.match(reg2))
+        console.log(`match =`,str1.match(reg3))
+    </script>
+</body>
+</html>

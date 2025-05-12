@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>Validating Indian Mobile NUmber</h1>            
+        </div>
+
+        <div class="card">
+            <form autocomplete="off" method="post" onsubmit = "submitHandler(event)">
+                <div class="form-item">
+                    <label for="mobile">Your Mobile Number</label>
+                    <input type="text" name="mobile" id="mobile" minlength="10"  class="form-control" >
+                </div>
+                <div class="form-item">
+                    <input type="submit" value="Submit" class="btn success">
+                    <input type="reset" value="Clear" class="btn danger">
+                </div>
+            </form>
+
+            <div id="status"></div>
+        </div>
+    </div>
+    <script src ="./p3.js"></script>
+</body>
+</html>

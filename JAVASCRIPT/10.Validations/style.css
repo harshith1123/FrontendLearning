@@ -43,14 +43,17 @@ body{
     color: #fff;
     border-radius: 4px;
 }
-.success{background-color: green; color: #fff;}
-.danger{background-color: orangered; color: #fff;}
+
+.success{background-color: green !important;color: #fff;}
+.danger{background-color: orangered !important; color: #fff;}
 
 #status{
     padding: 10px;
     background-color: #eee;
+    text-align: center;
     margin-top: 1rem;
 }
+
 
 @media screen and (max-width:990px){
     .card{

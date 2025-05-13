@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>Area of Circle</h1>
+        </div>
+
+        <div class="form-card">
+            <form onsubmit="submitHandler(event)">
+                <div class="form-item">
+                    <label for="rad">Enter Radius</label>
+                    <input type="number" name="rad" id="rad" placeholder="Enter radius" class="form-input" step="0.1" required>
+                </div>
+                <div class="form-item">
+                    <input type="submit" value="Calculate" class="btn">
+                </div>
+            </form>
+        </div>
+
+        <div class="result"></div>
+        <script src="./index1.js"></script>
+    </div>
+</body>
+</html>

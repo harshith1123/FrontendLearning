@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+    background-color: #e1e1e1;
+}
+
+.home {
+    padding: 20px;
+    width: 100%;
+    margin: 0% auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    min-width: 800px;
+    margin: 0% auto;
+}
+
+.container header {
+    padding: 1.5rem;
+    width: 95%;
+    position: relative;
+}
+
+header .title {
+    position: relative;
+    width: fit-content;
+    color:#3b3b3b;
+}
+
+header .title .underline {
+    height: 4px;
+    width: 70%;
+    background-image: linear-gradient(to right bottom, #20bf65,#01baef);
+    border-radius: 99px;
+}
+
+.dashboard,
+.expenseIncomeList {
+    width: 40vw;
+    margin: 0% auto;
+    background-image: linear-gradient(to right bottom, #30bf55, #01baef);
+    padding: 20px;
+    border-radius: 12px;
+    color: #fff;
+    line-height: 35px;
+    margin-top: 10px;
+    user-select: none;
+}
+
+.dashboard .dashboardBottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dashboard p,
+.expenseIncomeList p  {
+    color: #3b3b3b;
+    font-weight: 800;
+}
+
+#balance { color: #222;}
+#income { color: gold;}
+#expense { color: red;}
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 5px;
+}
+
+.card .form-item {
+    width: 100%;
+}
+
+.card .form-item input {
+    padding: 8px 10px;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    width: 100%;
+}
+
+.card .form-item .btn {
+    padding: 8px 10px;
+    width: 100%;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    color:#fff;
+}
+
+.form-item .btn.dark {
+        background-color: #222;
+}
+
+.form-item .btn.warning {
+    background-color: orange;
+}
+
+#list {
+    list-style: none;
+}
+
+#list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #e1e1e1;
+    padding: 12px;
+    margin-top: 5px;
+    border-radius: 6px;
+    margin-left: -2rem;
+}
+
+#list li .leftItem {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#list .income {
+    background-color: rgba(0, 128, 0, 0.7);
+}
+#list .expense {
+    background-color: rgba(255, 68, 0, 0.7);
+}
+
+#list .rightItem .btn {
+    cursor: pointer;
+    padding: 4px 6px;
+}
+
+#list .rightItem .btn.edit {
+    color: cyan;
+}
+#list .rightItem .btn.delete {
+    color: red;
+}
+
+@media screen and (max-width:990px) {
+
+    .dashboard,
+    .expenseIncomeList {
+        width: 80vw;
+        transition: all 0.5s ease-in;
+    }
+
+    .card {
+        flex-direction: column;
+    }
+}

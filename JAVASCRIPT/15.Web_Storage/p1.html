@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>LocalStorage</h1>
+
+    <form id="userForm">
+        <div>
+            <label for="user">Username</label>
+            <input type="text" name="user" id="user" required>
+        </div>
+
+        <div>
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+
+    <hr>
+
+    <div id="output"></div>
+
+    <script>
+        let userFormEl = document.getElementById("userForm")
+        let userEl = document.getElementById("user")
+        let outEl = document.getElementById("output")
+
+        userFormEl.addEventListener("submit", (e) => {
+            e.preventDefault();
+            console.log("username", userEl.value)
+
+            localStorage.setItem("username", userEl.value)
+            window.location.reload();
+        });
+
+        function printData(){
+            let user = localStorage.getItem("username")
+                if(user){
+                    outEl.innerHTML = `<h1> usernsme is ${user} <button onclick="deleteHandler()">Delete</button></h1>`
+                } else{
+                    outEl.innerHTML = `<h1> no username found</h1>`
+                }
+        }
+        printData();
+
+        function deleteHandler(){
+            if(window.confirm(`Are you sure you want to delete user?`)){
+                localStorage.removeItem("username")
+                alert("username is removed")
+                window.location.reload();
+            }
+        }
+
+        // localStorage.clear(); // to clear complete local storage
+    </script>
+</body>
+</html>

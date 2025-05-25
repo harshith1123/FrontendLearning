@@ -12,7 +12,7 @@ console.log('x =',x);
 var x = 40;
 console.log('x=', x);
 
-// In var, it can redeclare with the same variable and allocat different memory for it.
+// In var, it can redeclare with the same variable and allocates different memory for it.
 
 let y = 44;
 console.log('y=', y);

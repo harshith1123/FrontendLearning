@@ -1,4 +1,4 @@
-// object key - It should starts with  square bracket and atleast one key must be unique
+// object key - It should starts with square bracket and atleast one key value must be unique
 
 var users =[
     {
